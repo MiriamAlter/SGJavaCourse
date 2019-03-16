@@ -3,46 +3,100 @@
 <!--
 Name: Miriam Alter
 Date Created: 1/5/19
-Most recent revision: 1/6/19
+Most recent revision: 3/10/19
 -->
 
 <html lang="en">
 	<head>
 		<title>Miriam Alter's Portfolio</title>
+		<link href="styles/teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header {
+				background: blue;
+			}
+		</style>
 	</head>
+	
 	<body>
 		<header>
 			<h1>Portfolio for Miriam Alter</h1>
 		</header>
-		<nav>
-			<hr />
+		<nav class="border">
+			<hr style="width: 75%; border: 5px double aquamarine;" />
 			<div><a href="projects.html">Projects</a></div>
 			<div><a href="contact.html">Contact Me</a></div>
 			<div><a href="testimonials.html">Testimonials</a></div>
-			<hr />
+			<hr style="width: 75%; border: 5px double blueviolet;" />
 		</nav>
 		<section>
-			<article id="about-me">
+			<article class="border" id="about-me">
 				<h2><em>About Me</em></h2>
 				<a href="http://www.facebook.com/eladestler"><img src="images/lineart.png" alt="Lineart by Aleksey Nelipa"></a>
-				<p>Words words words</p>
-				<p>Words <strong>bold</strong> words</p>
+				<p>Words words words Words <span style="background-color: lightblue; border: thin solid darkblue;">blue box</span> words Words words words</p>
+				<p>Words <strong>bold</strong> words Words words words Words words <span style="background-color: black; color: darkred;">join the dark side</span></p>
 			</article>
-			<article id="past-experiences">
+			<article id="experience">
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/sunglasses.jpg" alt="Me with sunglasses">
-				<p>Words <span style="background-color: lightblue; border: thin solid darkblue;">blue box</span> words</p>
-				<p>Words words words</p>
+				<table>
+					<caption>Employment History</caption>
+					<tr>
+						<th>Years of Employment</th>
+						<th>Title</th>
+						<th>Company</th>
+					</tr>
+					<tr>
+						<td>A time</td>
+						<td>A thing</td>
+						<td>A place</td>
+					</tr>
+					<tr>
+						<td>Another time</td>
+						<td>Another thing</td>
+						<td>Another place</td>
+					</tr>
+					<tr>
+						<td>A different time</td>
+						<td>A different thing</td>
+						<td>A different place</td>
+					</tr>
+				</table>
 			</article>
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src="images/openmic.jpg" alt="The Ela in her natural habitat">
-				<p>Words words <span style="background-color: black; color: darkred;">join the dark side</span></p>
-				<p>Words words words</p>
+				<ul>
+					<li>Numbered list of things</li>
+					<ol>
+						<li>Item one</li>
+						<li>Item two</li>
+						<li>Item three</li>
+					</ol>
+					<li>Numbered list of things</li>
+					<ol>
+						<li>Item one</li>
+						<li>Item two</li>
+						<li>Item three</li>
+					</ol>
+				</ul>
+				<ul>
+					<li>Random list of things</li>
+					<ul>
+						<li>Thing</li>
+						<li>Thing</li>
+						<li>Thing</li>
+					</ul>
+					<li>Random list of things</li>
+					<ul>
+						<li>Thing</li>
+						<li>Thing</li>
+						<li>Thing</li>
+					</ul>
+				</ul>
 			</article>
 		</section>
 		<footer>
-			<hr />
+			<hr style="width: 75%; border: 5px double hotpink;" />
 			<p>&copy; 2019 Miriam Alter. All rights reserved.</p>
 		</footer>
 	</body>

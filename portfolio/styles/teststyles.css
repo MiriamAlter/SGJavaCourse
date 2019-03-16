@@ -1,0 +1,14 @@
+body {
+	background-color: lightyellow;
+}
+header, footer {
+	background-color: black;
+	color: white;
+	border: 2px dotted white;
+}
+.border {
+	border: thick solid blue;
+}
+#experience {
+	border: thin solid orange;
+}
