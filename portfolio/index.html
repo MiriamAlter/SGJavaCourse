@@ -35,6 +35,16 @@ Most recent revision: 3/16/19
 			tr:nth-child(odd) {
 				background-color: #e4c2ad;
 			}
+			
+			article img{
+				float:left;
+			}
+			.right-content {
+				float:left;
+			}
+			article {
+				margin-bottom: 16px;
+			}
 		</style>
 	</head>
 	
@@ -43,9 +53,10 @@ Most recent revision: 3/16/19
 			<h1>Portfolio for Miriam Alter</h1>
 		</header>
 		<nav>
-			<div><a href="projects.html">Projects</a></div>
-			<div><a href="contact.html">Contact Me</a></div>
-			<div><a href="testimonials.html">Testimonials</a></div>
+			<p><a href="projects.html">Projects</a></p>
+			<p><a href="contact.html">Contact Me</a></p>
+			<p><a href="testimonials.html">Testimonials</a></p>
+			<div class="clear-float"></div>
 		</nav>
 		<section>
 			<article id="about-me">
@@ -54,64 +65,71 @@ Most recent revision: 3/16/19
 				<p>Words words words Words <span style="background-color: lightblue; border: thin solid darkblue;">blue box</span> words Words words words</p>
 				<p>Words <strong>bold</strong> words Words words words Words words <span style="background-color: black; color: darkred;">join the dark side</span></p>
 			</article>
+			<div class="clear-float"></div>
 			<article id="experience">
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/sunglasses.jpg" alt="Me with sunglasses">
-				<table>
-					<caption>Employment History</caption>
-					<tr>
-						<th>Years of Employment</th>
-						<th>Title</th>
-						<th>Company</th>
-					</tr>
-					<tr>
-						<td>A time</td>
-						<td>A thing</td>
-						<td>A place</td>
-					</tr>
-					<tr>
-						<td>Another time</td>
-						<td>Another thing</td>
-						<td>Another place</td>
-					</tr>
-					<tr>
-						<td>A different time</td>
-						<td>A different thing</td>
-						<td>A different place</td>
-					</tr>
-				</table>
+				<div class="right-content">
+					<table>
+						<caption>Employment History</caption>
+						<tr>
+							<th>Years of Employment</th>
+							<th>Title</th>
+							<th>Company</th>
+						</tr>
+						<tr>
+							<td>A time</td>
+							<td>A thing</td>
+							<td>A place</td>
+						</tr>
+						<tr>
+							<td>Another time</td>
+							<td>Another thing</td>
+							<td>Another place</td>
+						</tr>
+						<tr>
+							<td>A different time</td>
+							<td>A different thing</td>
+							<td>A different place</td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src="images/openmic.jpg" alt="The Ela in her natural habitat">
-				<ul>
-					<li>Numbered list of things</li>
-					<ol>
-						<li>Item one</li>
-						<li>Item two</li>
-						<li>Item three</li>
-					</ol>
-					<li>Numbered list of things</li>
-					<ol>
-						<li>Item one</li>
-						<li>Item two</li>
-						<li>Item three</li>
-					</ol>
-				</ul>
-				<ul>
-					<li>Random list of things</li>
+				<div class="right-content">
 					<ul>
-						<li>Thing</li>
-						<li>Thing</li>
-						<li>Thing</li>
+						<li>Numbered list of things</li>
+						<ol>
+							<li>Item one</li>
+							<li>Item two</li>
+							<li>Item three</li>
+						</ol>
+						<li>Numbered list of things</li>
+						<ol>
+							<li>Item one</li>
+							<li>Item two</li>
+							<li>Item three</li>
+						</ol>
 					</ul>
-					<li>Random list of things</li>
 					<ul>
-						<li>Thing</li>
-						<li>Thing</li>
-						<li>Thing</li>
+						<li>Random list of things</li>
+						<ul>
+							<li>Thing</li>
+							<li>Thing</li>
+							<li>Thing</li>
+						</ul>
+						<li>Random list of things</li>
+						<ul>
+							<li>Thing</li>
+							<li>Thing</li>
+							<li>Thing</li>
 					</ul>
 				</ul>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 		</section>
 		<footer>
