@@ -1,5 +1,12 @@
+/*
+Creator: Miriam Alter
+Date created: 3/10/19
+Date last modified: 3/16/19
+*/
+
 body {
-	background-color: lightyellow;
+	background-color: #fef9ff;
+	color: #0d1f2d;
 }
 header, footer {
 	background-color: black;

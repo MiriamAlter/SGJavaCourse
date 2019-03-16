@@ -3,16 +3,37 @@
 <!--
 Name: Miriam Alter
 Date Created: 1/5/19
-Most recent revision: 3/10/19
+Most recent revision: 3/16/19
 -->
 
 <html lang="en">
 	<head>
 		<title>Miriam Alter's Portfolio</title>
-		<link href="styles/teststyles.css" rel="stylesheet" type="text/css" />
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
 		<style>
-			header {
-				background: blue;
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			th {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			tr:nth-child(odd) {
+				background-color: #e4c2ad;
 			}
 		</style>
 	</head>
@@ -21,15 +42,13 @@ Most recent revision: 3/10/19
 		<header>
 			<h1>Portfolio for Miriam Alter</h1>
 		</header>
-		<nav class="border">
-			<hr style="width: 75%; border: 5px double aquamarine;" />
+		<nav>
 			<div><a href="projects.html">Projects</a></div>
 			<div><a href="contact.html">Contact Me</a></div>
 			<div><a href="testimonials.html">Testimonials</a></div>
-			<hr style="width: 75%; border: 5px double blueviolet;" />
 		</nav>
 		<section>
-			<article class="border" id="about-me">
+			<article id="about-me">
 				<h2><em>About Me</em></h2>
 				<a href="http://www.facebook.com/eladestler"><img src="images/lineart.png" alt="Lineart by Aleksey Nelipa"></a>
 				<p>Words words words Words <span style="background-color: lightblue; border: thin solid darkblue;">blue box</span> words Words words words</p>
@@ -96,7 +115,7 @@ Most recent revision: 3/10/19
 			</article>
 		</section>
 		<footer>
-			<hr style="width: 75%; border: 5px double hotpink;" />
+			<hr />
 			<p>&copy; 2019 Miriam Alter. All rights reserved.</p>
 		</footer>
 	</body>
