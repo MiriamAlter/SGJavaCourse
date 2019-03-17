@@ -3,35 +3,60 @@
 <!--
 Name: Miriam Alter
 Date Created: 2/19/19
-Most recent revision: 3/16/19
+Most recent revision: 3/17/19
 -->
 
 <html lang="en">
 	<head>
-		<title>Menu</title>
+		<title>Codeburgers | Menu</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Geostar+Fill" rel="stylesheet"> 
+		
 		<style>
 			td {
-			text-align: center;
-			vertical-align: top;
+				text-align: center;
+				vertical-align: top;
+				padding: 1%;
+			}
+			h4 {
+				margin-bottom: 0;
+				padding: 0;
+				line-height: 0.8;
+				font-weight: bold;
+			}
+			caption {
+				color: inherit;
+				text-align: center;
+				caption-side: top;
+			}
+			.edge-align tbody td:nth-of-type(odd) {
+				text-align: left;
+			}
+			.edge-align tbody td:nth-of-type(even) {
+				text-align: right;
 			}
 		</style>
 	</head>
 	<body>
-		<header>
+		<header class="jumbotron">
 			<h1>Codeburgers</h1>
 		</header>
-		<hr />
+
 		<nav>
-			<div><a href="index.html">Home</a></div>
-			<div><a href="menu.html">Menu</a></div>
-			<div><a href="contact.html">Contact Us</a></div>
+			<a class="btn col-lg-2 col-md-3" href="index.html" role="button">Home</a>
+			<a class="btn disabled col-lg-2 col-md-3" href="menu.html" role="button">Menu</a>
+			<a class="btn col-lg-2 col-md-3" href="contact.html" role="button">Contact Us</a>
 		</nav>
-		<hr />
-		<section>
-			<table width="80%">
+		
+		<section style="margin-bottom: 2rem;">
+			<table class="col-fluid col-lg-10" style="margin: auto;">
 				<tr>
 					<td>
-						<strong>Burger and Fries</strong>
+						<h4>Burger and Fries</h4>
 						<br />
 						An American Classic!
 						<br />
@@ -44,7 +69,7 @@ Most recent revision: 3/16/19
 						$7.95
 					</td>
 					<td>
-						<strong>Hot Dog and Chips</strong>
+						<h4>Hot Dog and Chips</h4>
 						<br />
 						A Summer Classic!
 						<br />
@@ -57,7 +82,7 @@ Most recent revision: 3/16/19
 						$7.95
 					</td>
 					<td>
-						<strong>Italian Sausage and Peppers</strong>
+						<h4>Italian Sausage and Peppers</h4>
 						<br />
 						An All-Time Favorite!
 						<br />
@@ -70,7 +95,7 @@ Most recent revision: 3/16/19
 				</tr>
 				<tr>
 					<td>
-						<strong>Tenderloin Sandwich and Chips</strong>
+						<h4>Tenderloin Sandwich and Chips</h4>
 						<br />
 						Really Hits the Spot!
 						<br />
@@ -83,9 +108,9 @@ Most recent revision: 3/16/19
 						$8.95
 					</td>
 					<td>
-						<strong>House Salad</strong>
+						<h4>House Salad</h4>
 						<br />
-						on the Lighter Side
+						On the Lighter Side
 						<br />
 						Your choice - with or without cheese
 						<br />
@@ -98,7 +123,7 @@ Most recent revision: 3/16/19
 						$6.95
 					</td>
 					<td>
-						<strong>Brisket Sandwich and Fries</strong>
+						<h4>Brisket Sandwich and Fries</h4>
 						<br />
 						A Taste of Texas!
 						<br />
@@ -113,7 +138,29 @@ Most recent revision: 3/16/19
 				</tr>
 			</table>
 		</section>
-		<hr />
+		
+		<section style="margin-bottom: 2rem;">
+			<table class="edge-align col-6 col-md-3" style="margin: auto;">
+				<caption><h4>Beverages</h4></caption>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</table>
+		</section>
+		
 		<footer>
 			<p>404 Hard Drive, Nowheresville, XX 12345</p>
 			<p>(000) 175-1337</p>

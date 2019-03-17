@@ -1,0 +1,67 @@
+/*
+Creator: Miriam Alter
+Date created: 3/17/19
+Date last modified: 3/17/19
+*/
+
+body {
+	background: black;
+	color: #0f0;
+	font-family: consolas, monospace;
+}
+
+.jumbotron {
+	background: black;
+	border: 2vw groove;
+	border-radius: 0;
+	padding: 1%;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-family: "Geostar Fill", monospace;
+	font-size: 5vw;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+nav {
+	margin-bottom: 1rem;
+}
+
+nav .btn {
+	color: #0f0;
+	margin: 3px;
+	border: 2px solid #0f0;
+}
+
+nav .btn.disabled {
+	opacity: 1;
+	background-color: #0e0;
+	color: black;
+}
+
+nav .btn:hover, .btn:focus {
+	background-color: #050;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+nav .btn:active {
+	background-color: #0f0;
+	color: black;
+}
+
+table {
+	border: 0;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid #0f0;
+	padding-top: 1rem;
+	text-align: center;
+	font-size: 0.9em;
+}

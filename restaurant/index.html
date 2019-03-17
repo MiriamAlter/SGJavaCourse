@@ -3,31 +3,44 @@
 <!--
 Name: Miriam Alter
 Date Created: 2/19/19
-Most recent revision: 2/19/19
+Most recent revision: 3/17/19
 -->
 
 <html lang="en">
 	<head>
-		<title>Home Page</title>
+		<title>Codeburgers | Home</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Geostar+Fill" rel="stylesheet"> 
+		
+		<style>
+			.container {
+				max-width: 800px;
+				margin-bottom: 3rem;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
+		<header class="jumbotron">
 			<h1>Codeburgers</h1>
 		</header>
-		<hr />
+
 		<nav>
-			<div><a href="index.html">Home</a></div>
-			<div><a href="menu.html">Menu</a></div>
-			<div><a href="contact.html">Contact Us</a></div>
+			<a class="btn disabled col-lg-2 col-md-3" href="index.html" role="button">Home</a>
+			<a class="btn col-lg-2 col-md-3" href="menu.html" role="button">Menu</a>
+			<a class="btn col-lg-2 col-md-3" href="contact.html" role="button">Contact Us</a>
 		</nav>
-		<hr />
-		<section>
+
+		<section class="container">
 			<article id="description">
-			<image src="images/codeburgers.png" alt="Codeburgers">
+			<image src="images/codeburgers.png" alt="Codeburgers" style="display: block; margin: auto;">
 			<p>This is not a real restaurant. It's just a thing I'm doing for the Software Guild intro coding course. But like, how cool would it be if we could make burgers on our computer? That would be so freaking awesome! They say "you wouldn't download a burger"... heck yes I would download a burger. I'd sit there programming food to print out on a 3D printer all dang day. Just give me the code for some delicious fries and I'm in. Anyway, here's a website.</p>
 			</article>
 		</section>
-		<hr />
+		
 		<footer>
 			<p>404 Hard Drive, Nowheresville, XX 12345</p>
 			<p>(000) 175-1337</p>

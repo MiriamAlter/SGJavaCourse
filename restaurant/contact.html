@@ -3,32 +3,81 @@
 <!--
 Name: Miriam Alter
 Date Created: 2/19/19
-Most recent revision: 2/19/19
+Most recent revision: 3/17/19
 -->
 
 <html lang="en">
 	<head>
-		<title>Contact Us</title>
+		<title>Codeburgers | Contact Us</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Geostar+Fill" rel="stylesheet"> 
+		
+		<style>
+			.container {
+				margin: auto;
+			}
+			
+			td {
+				vertical-align: top;
+				padding: 1%;
+			}
+			.middle-align tbody td:nth-of-type(odd) {
+				text-align: right;
+			}
+			.middle-align tbody td:nth-of-type(even) {
+				text-align: left;
+			}
+			
+			input[type=text], select {
+				width: 100%;
+			}
+			textarea {
+				width: 100%;
+				height: 100px;
+			}
+			
+			form .btn {
+				background: black;
+				color: #0f0;
+				margin: 3px;
+				border: 2px solid #0f0;
+				width: 10em;
+			}
+			form .btn:hover, .btn:focus {
+				background-color: #050;
+				text-decoration: none;
+				font-weight: bold;
+				letter-spacing: 0.1em;
+			}
+			form .btn:active {
+				background-color: #0f0;
+				color: black;
+		</style>
 	</head>
 	<body>
-		<header>
+		<header class="jumbotron">
 			<h1>Codeburgers</h1>
 		</header>
-		<hr />
+
 		<nav>
-			<div><a href="index.html">Home</a></div>
-			<div><a href="menu.html">Menu</a></div>
-			<div><a href="contact.html">Contact Us</a></div>
+			<a class="btn col-lg-2 col-md-3" href="index.html" role="button">Home</a>
+			<a class="btn col-lg-2 col-md-3" href="menu.html" role="button">Menu</a>
+			<a class="btn disabled col-lg-2 col-md-3" href="contact.html" role="button">Contact Us</a>
 		</nav>
-		<hr />
+		
+		<div class="container">
 		<form action="submit.html" method="POST">
-			<table>
+			<table class="middle-align" width="60%">
 				<tr>
-					<td><label for="name">Name:</label></td>
+					<td><label for="name"><strong>Name:</strong></label></td>
 					<td><input type="text" id="name" name="name" required></td>
 				</tr>
 				<tr>
-					<td><label for="email">Email:</label></td>
+					<td><label for="email"><strong>Email:</strong></label></td>
 					<td><input type="text" id="email" name="email" required></td>
 				</tr>
 				<tr>
@@ -68,10 +117,14 @@ Most recent revision: 2/19/19
 					<input type="checkbox" id="friday" name="bestDays" value="friday" />
 					<label for="friday">F</label></td>
 				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Send Request" class="btn" /></td>
+				</tr>
 			</table>
-			<input type="submit" value="Send Request" />
 		</form>
-		<hr />
+		</div>
+		
 		<footer>
 			<p>404 Hard Drive, Nowheresville, XX 12345</p>
 			<p>(000) 175-1337</p>
