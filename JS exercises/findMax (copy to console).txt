@@ -1,0 +1,13 @@
+function findMax (array) {
+	for (var position = 1; array.length > 1; position++) {
+		var current = array[position];
+		var previous = array[position - 1];
+		if (current < previous) {
+			array.splice(position, 1);
+		} else {
+			array.splice(position - 1, 1);
+		}
+		position--;
+	}
+	return ("Max value:" + array[0]);
+}
