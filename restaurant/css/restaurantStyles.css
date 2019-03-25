@@ -12,7 +12,7 @@ body {
 
 .jumbotron {
 	background: black;
-	border: 2vw groove;
+	border: 2vw groove #0f0;
 	border-radius: 0;
 	padding: 1%;
 	margin-bottom: 1rem;
@@ -21,35 +21,64 @@ body {
 
 .jumbotron h1 {
 	font-family: "Geostar Fill", monospace;
-	font-size: 5vw;
+	font-size: 8vw;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+.jumbotron h2 {
+	font-size: 4.25vw;
 	text-transform: uppercase;
 	margin: 0;
 }
 
-nav {
-	margin-bottom: 1rem;
+@media screen and (min-width: 1000px) {
+	.jumbotron h1 {
+		font-size: 5em;
+	}
+	.jumbotron h2 {
+		font-size: 2.65em;
+	}
 }
 
-nav .btn {
-	color: #0f0;
+.nav {
+	margin-bottom: 1rem;
+	border-bottom: 2px solid #0f0;
+}
+
+.nav-item {
 	margin: 3px;
 	border: 2px solid #0f0;
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+	padding: 0px;
 }
 
-nav .btn.disabled {
-	opacity: 1;
-	background-color: #0e0;
-	color: black;
+.nav-link {
+	color: #0f0;
+	margin: 0px;
+	margin-bottom: -1px;
+	padding: 0.5rem 1rem;
 }
 
-nav .btn:hover, .btn:focus {
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
 	background-color: #050;
+	color: #0f0;
 	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	border-color: #0f0;
+}
+
+.nav-tabs .nav-link.active{
+	color: #000;
+	background-color: #0d0;
+	border-color: #0f0;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 }
 
-nav .btn:active {
+.nav-tabs .nav-link:active {
 	background-color: #0f0;
 	color: black;
 }
